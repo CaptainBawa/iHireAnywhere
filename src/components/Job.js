@@ -5,6 +5,7 @@ import { fetchRemoteJobs, findJobDetails, noJobDetails } from '../redux/remoteJo
 const Jobs = () => {
   const dispatch = useDispatch();
   const jobs = useSelector((state) => state.jobs.jobs);
+  // console.log('id', jobs.id);
 
   useEffect(() => {
     dispatch(fetchRemoteJobs());
@@ -18,7 +19,7 @@ const Jobs = () => {
 
   const handleJobDetails = (jobId) => {
     const job = jobs.find((findjob) => findjob.id === jobId);
-    if (job.details) {
+    if (job && job.details) {
       dispatch(findJobDetails(jobId));
     } else {
       dispatch(noJobDetails(jobId));

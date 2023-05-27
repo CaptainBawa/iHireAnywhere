@@ -23,12 +23,12 @@ const jobsSlice = createSlice({
     findJobDetails: (state, action) => {
       const jobId = action.payload;
       state.jobs = state.jobs.map((job) => (job.id === jobId
-        ? { ...job, details: true } : job));
+        ? { ...job, details: false } : job));
     },
     noJobDetails: (state, action) => {
       const jobId = action.payload;
       state.jobs = state.jobs.map((job) => (job.id === jobId
-        ? { ...job, details: false } : job));
+        ? { ...job, details: true } : job));
     },
   },
   extraReducers: (builder) => {
