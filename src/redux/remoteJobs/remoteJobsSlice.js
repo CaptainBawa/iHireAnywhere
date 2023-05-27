@@ -7,20 +7,10 @@ const initialState = {
   error: null,
 };
 
-const getJobs = {
-  method: 'GET',
-  url: 'https://remote-jobs-api.p.rapidapi.com/jobs',
-  headers: {
-    'X-RapidAPI-Key': '50ac3716f5msh6f904c1a970dbbcp164a1bjsnb5d27d85e2b5',
-    'X-RapidAPI-Host': 'remote-jobs-api.p.rapidapi.com',
-  },
-};
-
 export const fetchRemoteJobs = createAsyncThunk('jobs/fetchRemoteJobs', async () => {
   try {
-    const response = await axios.get(getJobs.url,
-      { headers: getJobs.headers });
-    return response.data;
+    const response = await axios.get('https://remotive.com/api/remote-jobs?limit=10');
+    return response.data.jobs;
   } catch (error) {
     throw new Error('Failed to fetch jobs');
   }
