@@ -19,7 +19,18 @@ export const fetchRemoteJobs = createAsyncThunk('jobs/fetchRemoteJobs', async ()
 const jobsSlice = createSlice({
   name: 'jobs',
   initialState,
-  reducers: {},
+  reducers: {
+    findJobDetails: (state, action) => {
+      const jobId = action.payload;
+      state.jobs = state.jobs.map((job) => (job.id === jobId
+        ? { ...job, details: true } : job));
+    },
+    noJobDetails: (state, action) => {
+      const jobId = action.payload;
+      state.jobs = state.jobs.map((job) => (job.id === jobId
+        ? { ...job, details: false } : job));
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchRemoteJobs.pending, (state) => {
@@ -37,5 +48,5 @@ const jobsSlice = createSlice({
 
 });
 
-// export const { } = jobsSlice.actions;
+export const { findJobDetails, noJobDetails } = jobsSlice.actions;
 export default jobsSlice.reducer;
