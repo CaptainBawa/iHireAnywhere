@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
 import jobsReducer from './remoteJobs/remoteJobsSlice';
-// import jobsReducer, { fetchRemoteJobs } from './remoteJobs/remoteJobsSlice';
 
 const store = configureStore({
   reducer: {
@@ -8,4 +7,3 @@ const store = configureStore({
   },
 });
 export default store;
-// export default store.dispatch(fetchRemoteJobs());

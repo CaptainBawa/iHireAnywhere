@@ -20,14 +20,7 @@ export const fetchRemoteJobs = createAsyncThunk('jobs/fetchRemoteJobs', async ()
   try {
     const response = await axios.get(getJobs.url,
       { headers: getJobs.headers });
-    console.log(response.data);
-    // const selectedData = response.data.map((rocket) => ({
-    //   id: rocket.id,
-    //   rocket_name: rocket.name,
-    //   description: rocket.description,
-    //   rocket_flickr_images: rocket.flickr_images,
-    // }));
-    // return selectedData;
+    return response.data;
   } catch (error) {
     throw new Error('Failed to fetch jobs');
   }
