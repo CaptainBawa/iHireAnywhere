@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import Navigation from './Navigation';
 import { fetchRemoteJobs, findJobDetails, noJobDetails } from '../redux/remoteJobs/remoteJobsSlice';
+// import { AllInbox } from '@mui/icons-material';
 
 const Jobs = () => {
   const dispatch = useDispatch();

@@ -15,11 +15,12 @@ const Navigation = () => (
       <li>
         <MicIcon />
       </li>
-      <li>All Remote Job</li>
+      <li>All Remote Jobs</li>
       <li className="divider">
         <SettingsIcon />
       </li>
     </ul>
   </nav>
 );
+
 export default Navigation;
