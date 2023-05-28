@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import Navigation from './Navigation';
 import { fetchRemoteJobs, findJobDetails, noJobDetails } from '../redux/remoteJobs/remoteJobsSlice';
+import businessman from '../assets/businessman.png';
 // import { AllInbox } from '@mui/icons-material';
 
 const Jobs = () => {
@@ -29,24 +31,27 @@ const Jobs = () => {
   };
 
   return (
-    <div>
+    <div className="job-container">
       <Navigation />
-      <div><h2>Remote Jobs</h2></div>
-      <ul className="job">
+      <div className="screen">
+        <img src={businessman} alt="man" />
+        <h2>Remote Jobs</h2>
+      </div>
+      All available jobs
+      <ul className="jobs-container">
         {jobs.map((job) => (
           <li key={job.id}>
             <button type="button" onClick={() => handleJobDetails(job.id)}>
+              <ArrowCircleRightIcon />
               <img src={job.company_logo} alt={job.company_name} />
-              <div>
-                <h2>
-                  company Name:
-                  {job.company_name}
-                </h2>
-                <h2>
-                  Job Title:
-                  {job.title}
-                </h2>
-              </div>
+              <h2>
+                Company Name:
+                {job.company_name}
+              </h2>
+              <h2>
+                Job Title:
+                {job.title}
+              </h2>
             </button>
           </li>
         ))}

@@ -9,6 +9,8 @@
 body {
   width: 100%;
   height: 100vh;
+  font-family: 'Lato', sans-serif;
+  background-color: #de4682;
 }
 
 .App {
@@ -27,4 +29,52 @@ nav ul {
     height: auto;
     align-items: center;
 }
+
+.screen {
+  width: 100%;
+    height: 30vh;
+    align-items: center;
+    display: flex;
+    background-color: #fd5294;
+    border: 1px solid gold;
+}
+
+.screen img {
+  width: 50%;
+  height: auto;
+}
+
+.jobs-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jobs-container li {
+  width: 50%;
+  height: auto; 
+}
+
+.jobs-container button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  gap: 5%;
+  width: 100%;
+  height: 35vh;
+  background-color: #de4682;
+}
+
+.jobs-container button img {
+  width: 30%;
+  height: auto;
+}
+
+.jobs-container button h2 {
+  font-size: 1.5em;
+}
+
 
