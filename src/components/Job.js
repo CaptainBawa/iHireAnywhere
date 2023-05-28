@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import Navigation from './Navigation';
 import { fetchRemoteJobs, findJobDetails, noJobDetails } from '../redux/remoteJobs/remoteJobsSlice';
 
 const Jobs = () => {
@@ -28,40 +29,22 @@ const Jobs = () => {
 
   return (
     <div>
+      <Navigation />
+      <div><h2>Remote Jobs</h2></div>
       <ul className="job">
         {jobs.map((job) => (
           <li key={job.id}>
             <button type="button" onClick={() => handleJobDetails(job.id)}>
               <img src={job.company_logo} alt={job.company_name} />
               <div>
-                <h1>
+                <h2>
                   company Name:
                   {job.company_name}
-                </h1>
-                <p>
+                </h2>
+                <h2>
                   Job Title:
                   {job.title}
-                </p>
-                <p>
-                  Job Type:
-                  {job.job_type}
-                </p>
-                <p>
-                  Job Date:
-                  {job.publication_date}
-                </p>
-                <p>
-                  Salary:
-                  {job.salary}
-                </p>
-                <p>
-                  Candidate Required Location:
-                  {job.candidate_required_location}
-                </p>
-                <p>
-                  Website:
-                  {job.url}
-                </p>
+                </h2>
               </div>
             </button>
           </li>
