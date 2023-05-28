@@ -1,4 +1,30 @@
+*, 
+::after, 
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
 .App {
-  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    align-items: center;
 }
 
