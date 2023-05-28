@@ -1,20 +1,19 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { fetchRemoteJobs, findJobDetails, noJobDetails } from '../redux/remoteJobs/remoteJobsSlice';
 
 const Jobs = () => {
   const dispatch = useDispatch();
   const jobs = useSelector((state) => state.jobs.jobs);
-  // console.log('id', jobs.id);
+  const navigate = useNavigate();
 
   useEffect(() => {
     dispatch(fetchRemoteJobs());
   }, [dispatch]);
 
   if (!jobs.length) {
-    return (
-      <div>Loading</div>
-    );
+    return <div>Loading</div>;
   }
 
   const handleJobDetails = (jobId) => {
@@ -24,11 +23,12 @@ const Jobs = () => {
     } else {
       dispatch(noJobDetails(jobId));
     }
+    navigate(`/jobdetails/${jobId}`);
   };
 
   return (
     <div>
-      <ul className="rocket">
+      <ul className="job">
         {jobs.map((job) => (
           <li key={job.id}>
             <button type="button" onClick={() => handleJobDetails(job.id)}>
@@ -64,7 +64,6 @@ const Jobs = () => {
                 </p>
               </div>
             </button>
-
           </li>
         ))}
       </ul>

@@ -2,8 +2,9 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const JobDetails = () => {
-  const selectedJobDetails = (state) => state.jobs.jobs.filter((job) => job.details);
-  const jobDetails = useSelector(selectedJobDetails);
+  const selectedJobDetails = useSelector((state) => state.jobs.jobs
+    .filter((job) => job.details === true));
+  const jobDetails = selectedJobDetails;
 
   return (
     <div>
