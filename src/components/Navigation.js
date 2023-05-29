@@ -12,10 +12,10 @@ const Navigation = () => (
         <KeyboardArrowLeftIcon />
         2023
       </li>
+      <li>All Remote Jobs</li>
       <li>
         <MicIcon />
       </li>
-      <li>All Remote Jobs</li>
       <li className="divider">
         <SettingsIcon />
       </li>

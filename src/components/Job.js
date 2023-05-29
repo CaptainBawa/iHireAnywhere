@@ -37,17 +37,16 @@ const Jobs = () => {
         <img src={businessman} alt="man" />
         <h2>Remote Jobs</h2>
       </div>
-      All available jobs
+      <h2 className="title">All available jobs</h2>
       <ul className="jobs-container">
         {jobs.map((job) => (
           <li key={job.id}>
             <button type="button" onClick={() => handleJobDetails(job.id)}>
-              <ArrowCircleRightIcon />
+              <ArrowCircleRightIcon style={{
+                position: 'relative', left: '40%', bottom: '8%', color: '#fff',
+              }}
+              />
               <img src={job.company_logo} alt={job.company_name} />
-              <h2>
-                Company Name:
-                {job.company_name}
-              </h2>
               <h2>
                 Job Title:
                 {job.title}
