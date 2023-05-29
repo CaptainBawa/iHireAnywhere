@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import Navigation from './Navigation';
 import { fetchRemoteJobs, findJobDetails, noJobDetails } from '../redux/remoteJobs/remoteJobsSlice';
-import businessman from '../assets/businessman.png';
+import support from '../assets/support.png';
 // import { AllInbox } from '@mui/icons-material';
 
 const Jobs = () => {
@@ -34,10 +34,10 @@ const Jobs = () => {
     <div className="job-container">
       <Navigation />
       <div className="screen">
-        <img src={businessman} alt="man" />
+        <img src={support} alt="man" />
         <h2>Remote Jobs</h2>
       </div>
-      <h2 className="title">All available jobs</h2>
+      <h2 className="title">Available jobs</h2>
       <ul className="jobs-container">
         {jobs.map((job) => (
           <li key={job.id}>
