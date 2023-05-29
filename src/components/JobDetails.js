@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import Navigation from './Navigation';
@@ -10,47 +11,43 @@ const JobDetails = () => {
 
   return (
     <div className="details-container">
-      <Navigation />
+      <Navigation text="Job Details" />
       <ul>
         {jobDetails.map((details) => (
           <>
             <div className="screen">
               <img src={details.company_logo} alt={details.company_name} />
-              <h1>
+              <h2>
                 Company Name:
                 {details.company_name}
-              </h1>
+              </h2>
             </div>
+            <h2 id="details-title">{details.title}</h2>
             <li key={details.id}>
               <h2>
-                Job Title:
-                {details.title}
-                <ArrowCircleRightIcon />
+                <span>Job Type: </span>
+                <span>{details.job_type}</span>
+                <span><ArrowCircleRightIcon /></span>
               </h2>
               <h2>
-                Job Type:
-                {details.job_type}
-                <ArrowCircleRightIcon />
+                <span>Job Date:</span>
+                <span>{details.publication_date}</span>
+                <span><ArrowCircleRightIcon /></span>
               </h2>
               <h2>
-                Job Date:
-                {details.publication_date}
-                <ArrowCircleRightIcon />
+                <span>Salary:</span>
+                <span>{details.salary}</span>
+                <span><ArrowCircleRightIcon /></span>
               </h2>
               <h2>
-                Salary:
-                {details.salary}
-                <ArrowCircleRightIcon />
+                <span>Location:</span>
+                <span>{details.candidate_required_location}</span>
+                <span><ArrowCircleRightIcon /></span>
               </h2>
               <h2>
-                Candidate Required Location:
-                {details.candidate_required_location}
-                <ArrowCircleRightIcon />
-              </h2>
-              <h2>
-                Website:
-                {details.url}
-                <ArrowCircleRightIcon />
+                <span>Website:</span>
+                <Link to={details.url} style={{ color: '#fff' }}>Visit Link</Link>
+                <span><ArrowCircleRightIcon /></span>
               </h2>
             </li>
           </>

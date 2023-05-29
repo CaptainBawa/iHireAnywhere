@@ -69,6 +69,7 @@ nav ul {
   justify-content: space-around;
   display: flex;
   background-color: #fd5294;
+  padding: 1%;
 }
 
 .screen img {
@@ -111,13 +112,22 @@ nav ul {
   width: 100%;
   height: 15vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #de4682;
   border: 1px solid #fd5294;
   font-size: 1.2em;
+  padding: 0 1%;
 }
 
 .jobs-container button h2 {
   font-size: 1.5em;
+}
+
+#details-title {
+  height: 5vh;
+}
+
+.screen h2 {
+  background-color: #fd5294;
 }

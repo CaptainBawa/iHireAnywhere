@@ -5,7 +5,6 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import Navigation from './Navigation';
 import { fetchRemoteJobs, findJobDetails, noJobDetails } from '../redux/remoteJobs/remoteJobsSlice';
 import support from '../assets/support.png';
-// import { AllInbox } from '@mui/icons-material';
 
 const Jobs = () => {
   const dispatch = useDispatch();
@@ -32,7 +31,7 @@ const Jobs = () => {
 
   return (
     <div className="job-container">
-      <Navigation />
+      <Navigation year="2023" text="All Remote Jobs" />
       <div className="screen">
         <img src={support} alt="man" />
         <h2>Remote Jobs</h2>
