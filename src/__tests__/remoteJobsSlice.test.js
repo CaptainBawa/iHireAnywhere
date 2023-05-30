@@ -13,8 +13,12 @@ describe('Remote Jobs Slice', () => {
 
   it('fetchRemoteJobs success', async () => {
     const mockJobs = [
-      { id: 1, title: 'Job 1', company_logo: 'logo1', company_name: 'Company 1' },
-      { id: 2, title: 'Job 2', company_logo: 'logo2', company_name: 'Company 2' },
+      {
+        id: 1, title: 'Job 1', company_logo: 'logo1', company_name: 'Company 1',
+      },
+      {
+        id: 2, title: 'Job 2', company_logo: 'logo2', company_name: 'Company 2',
+      },
     ];
 
     jest.spyOn(axios, 'get').mockResolvedValue({ data: { jobs: mockJobs } });
