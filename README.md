@@ -65,7 +65,7 @@
 
 ## 🚀 Code Documentation For Non-technical People <a name="Documentation"></a>
 
-This describes the code to non-technical people [DOC](https://github.com/CaptainBawa/iHireAnywhere/blob/development/LICENSE)
+This describes the code to non-technical people [DOC](https://github.com/CaptainBawa/iHireAnywhere/blob/readme/Documentaion.md)
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
