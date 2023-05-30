@@ -11,7 +11,7 @@ describe('Navigation component', () => {
     const { getByText } = render(
       <MemoryRouter>
         <Navigation text={text} year={year} />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     expect(getByText(year)).toBeInTheDocument();

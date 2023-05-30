@@ -35,7 +35,7 @@ describe('JobDetails component', () => {
         <MemoryRouter>
           <JobDetails />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     expect(getByText(/Company Name:/)).toBeInTheDocument();

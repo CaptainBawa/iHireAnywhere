@@ -37,7 +37,7 @@ describe('Jobs component', () => {
         <MemoryRouter>
           <Jobs />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
     fireEvent.click(getByText(/Job Title:/));
     expect(store.getActions()).toContainEqual({
@@ -69,7 +69,7 @@ describe('Jobs component', () => {
         <MemoryRouter>
           <Jobs />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
     fireEvent.click(getByText(/Job Title:/));
     expect(store.getActions()).toContainEqual({
