@@ -74,7 +74,7 @@
 This describes the code to non-technical people [DOC](https://github.com/CaptainBawa/iHireAnywhere/blob/readme/Documentaion.md)
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://ihireanywhere.onrender.com)
 - [Presentation Video Link](https://google.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
