@@ -64,12 +64,12 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **User_can_find_remote_job**
-- **Fetch_jobs_from_API**
+- **Users Can Find Remote Job**
+- **Fetch Jobs From API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Code Documentation For Non-technical People <a name="Documentation"></a>
+## 🔭 Code Documentation For Non-technical People <a name="Documentation"></a>
 
 This describes the code to non-technical people [DOC](https://github.com/CaptainBawa/iHireAnywhere/blob/readme/Documentaion.md)
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -150,8 +150,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add_More_Jobs**
-- [ ] **Add_Desktop_Version**
+- [ ] **Add More Jobs**
+- [ ] **Add Desktop Version**
+- [ ] **Add Footer**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
