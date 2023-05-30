@@ -27,7 +27,7 @@ const Navigation = ({ text, year }) => (
 
 Navigation.propTypes = {
   text: PropTypes.string.isRequired,
-  year: PropTypes.number.isRequired,
+  year: PropTypes.string.isRequired,
 };
 
 export default Navigation;
