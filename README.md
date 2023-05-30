@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="LinkedIn Cover Main.jpg" alt="logo" width="100%"  height="auto" />
+  <img src="src/assets/LinkedIn Cover Main.jpg" alt="logo" width="100%"  height="auto" />
   <br/>
 
   <h3><b>iHireAnywhere</b></h3>
@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Documentation](#docs)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -27,7 +28,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 
@@ -43,37 +43,41 @@
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
     <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Server</summary>
+  <ul>
+    <li><a href="https://dashboard.render.com/">Render</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://dashboard.render.com/">Render</a></li>
+    <li><a href="https://remotive.com/">Remotive API</a></li>
   </ul>
 </details>
 
-
 ### Key Features <a name="key-features"></a>
 
-
-- **[User_can_find_remote_job]**
-- **[Fetch_jobs_from_API]**
+- **User_can_find_remote_job**
+- **Fetch_jobs_from_API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Code Documentation For Non-technical People <a name="Documentation"></a>
 
 This describes the code to non-technical people [DOC](https://github.com/CaptainBawa/iHireAnywhere/blob/readme/Documentaion.md)
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://google.com)
 - [Presentation Video Link](https://google.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -112,7 +116,6 @@ Install this project with:
 
 To run the project, execute the following command:
 
-
 ```sh
   Live server
 ```
@@ -129,13 +132,11 @@ To run tests, run the following command:
 
 You can deploy this project using:
 
-
 ```sh
   https://dashboard.render.com/
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -149,9 +150,8 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-- [ ] **[Add_More_Jobs]**
-- [ ] **[Add_Desktop_Version]**
+- [ ] **Add_More_Jobs**
+- [ ] **Add_Desktop_Version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
