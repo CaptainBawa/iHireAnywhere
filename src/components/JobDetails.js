@@ -36,7 +36,7 @@ const JobDetails = () => {
               </h2>
               <h2>
                 <span>Salary:</span>
-                <span>{details.salary}</span>
+                <span>{details.salary ? details.salary : 'Salary not provided'}</span>
                 <span><ArrowCircleRightIcon /></span>
               </h2>
               <h2>
