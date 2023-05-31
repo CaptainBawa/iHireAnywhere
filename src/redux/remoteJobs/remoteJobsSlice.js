@@ -9,7 +9,7 @@ const initialState = {
 
 export const fetchRemoteJobs = createAsyncThunk('jobs/fetchRemoteJobs', async () => {
   try {
-    const response = await axios.get('https://remotive.com/api/remote-jobs?limit=10');
+    const response = await axios.get('https://remotive.com/api/remote-jobs?category=software-dev');
     return response.data.jobs;
   } catch (error) {
     throw new Error('Failed to fetch jobs');

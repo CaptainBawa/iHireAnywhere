@@ -29,6 +29,13 @@ const Jobs = () => {
     navigate(`/jobdetails/${jobId}`);
   };
 
+  const getJobTitle = (title) => {
+    if (title.length > 31) {
+      return `${title.slice(0, 31)}...`;
+    }
+    return title;
+  };
+
   return (
     <div className="job-container">
       <Navigation year="2023" text="All Remote Jobs" />
@@ -42,13 +49,13 @@ const Jobs = () => {
           <li key={job.id}>
             <button type="button" onClick={() => handleJobDetails(job.id)}>
               <ArrowCircleRightIcon style={{
-                position: 'relative', left: '40%', bottom: '8%', color: '#fff',
+                position: 'relative', left: '40%', bottom: '5%', color: '#fff',
               }}
               />
               <img src={job.company_logo} alt={job.company_name} />
               <h2>
                 Job Title:
-                {job.title}
+                {getJobTitle(job.title)}
               </h2>
             </button>
           </li>
