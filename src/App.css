@@ -1,4 +1,142 @@
-.App {
-  text-align: center;
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  background-color: #de4682;
+  color: #fff;
+}
+
+.App {
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.settings,
+.back {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+
+.back,
+.remote {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+.remote {
+  font-weight: 300;
+}
+
+.title {
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 2%;
+}
+
+.screen {
+  width: 100%;
+  height: 30vh;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  background-color: #fd5294;
+  padding: 1%;
+}
+
+.screen img {
+  width: 40%;
+  height: auto;
+}
+
+.jobs-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jobs-container li {
+  width: 50%;
+  height: auto;
+}
+
+.jobs-container button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  gap: 5%;
+  width: 100%;
+  height: 35vh;
+  background-color: #de4682;
+  border: 1px solid #fd5294;
+  color: #fff;
+}
+
+.jobs-container button img {
+  width: 30%;
+  height: auto;
+}
+
+.details-container h2 {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #de4682;
+  border: 1px solid #fd5294;
+  font-size: 1.2em;
+  padding: 0 1%;
+}
+
+.screen h2 {
+  background-color: #fd5294;
+}
+
+.jobs-container button h2 {
+  font-size: 1.3em;
+}
+
+#details-title {
+  height: 5vh;
+}
+
+.search,
+.search input {
+  padding: 2%;
+}
+
+.search input {
+  outline: none;
+}
