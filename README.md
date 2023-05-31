@@ -66,6 +66,7 @@
 
 - **Users Can Find Remote Job**
 - **Fetch Jobs From API**
+- **Users Can Search Job By Title**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
