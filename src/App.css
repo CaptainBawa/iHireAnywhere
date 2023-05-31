@@ -120,12 +120,12 @@ nav ul {
   padding: 0 1%;
 }
 
-.jobs-container button h2 {
-  font-size: 1.3em;
-}
-
 .screen h2 {
   background-color: #fd5294;
+}
+
+.jobs-container button h2 {
+  font-size: 1.3em;
 }
 
 #details-title {
