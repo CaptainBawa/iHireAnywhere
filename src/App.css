@@ -124,10 +124,10 @@ nav ul {
   font-size: 1.3em;
 }
 
-#details-title {
-  height: 5vh;
-}
-
 .screen h2 {
   background-color: #fd5294;
+}
+
+#details-title {
+  height: 5vh;
 }
