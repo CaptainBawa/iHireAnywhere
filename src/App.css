@@ -131,3 +131,12 @@ nav ul {
 #details-title {
   height: 5vh;
 }
+
+.search,
+.search input {
+  padding: 2%;
+}
+
+.search input {
+  outline: none;
+}

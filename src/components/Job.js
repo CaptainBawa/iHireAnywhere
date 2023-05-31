@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
@@ -10,6 +10,7 @@ const Jobs = () => {
   const dispatch = useDispatch();
   const jobs = useSelector((state) => state.jobs.jobs);
   const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     dispatch(fetchRemoteJobs());
@@ -36,6 +37,9 @@ const Jobs = () => {
     return title;
   };
 
+  const filteredJobs = jobs.filter((job) => job.title.toLowerCase()
+    .includes(searchQuery.toLowerCase()));
+
   return (
     <div className="job-container">
       <Navigation year="2023" text="All Remote Jobs" />
@@ -43,9 +47,21 @@ const Jobs = () => {
         <img src={support} alt="man" />
         <h2>Remote Jobs</h2>
       </div>
-      <h2 className="title">Available jobs</h2>
+      <div className="search">
+        <input
+          type="text"
+          placeholder="Search by job title"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+            }
+          }}
+        />
+      </div>
       <ul className="jobs-container">
-        {jobs.map((job) => (
+        {filteredJobs.map((job) => (
           <li key={job.id}>
             <button type="button" onClick={() => handleJobDetails(job.id)}>
               <ArrowCircleRightIcon style={{
