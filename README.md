@@ -151,7 +151,7 @@ You can deploy this project using:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Add More Jobs**
-- [ ] **Add Desktop Version**
+- [ ] **Make It Responsive**
 - [ ] **Add Footer**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
