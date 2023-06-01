@@ -33,7 +33,7 @@
 
 # 📖 [iHireAnywhere] <a name="about-project"></a>
 
-**[iHireAnywhere]** is a mobile web application that allows users to browse and apply for remote jobs from various companies. It uses React for the front-end, Redux for the state management, and Axios for fetching data from an external API. The application consists of three main components: Jobs, JobDetails, and Navigation. Jobs displays a list of available remote jobs with their titles and logos. JobDetails shows more information about a selected job, such as the company name, description, salary, and location. Navigation provides a header with the current year and the text of the current page. Users can navigate between the pages using buttons with arrow icons.
+**[iHireAnywhere]** is a web application that allows users to browse and apply for remote jobs from various companies. It uses React for the front-end, Redux for the state management, and Axios for fetching data from an external API. The application consists of three main components: Jobs, JobDetails, and Navigation. Jobs displays a list of available remote jobs with their titles and logos. JobDetails shows more information about a selected job, such as the company name, description, salary, and location. Navigation provides a header with the current year and the text of the current page. Users can navigate between the pages using buttons with arrow icons.
 
 ## 🛠 Built With <a name="built-with"></a>
 
