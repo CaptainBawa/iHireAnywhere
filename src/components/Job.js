@@ -43,7 +43,7 @@ const Jobs = () => {
   return (
     <div className="job-container">
       <Navigation year="2023" text="All Remote Jobs" />
-      <div className="screen">
+      <div className="screen desk-screen">
         <img src={support} alt="man" />
         <h2>Remote Jobs</h2>
       </div>

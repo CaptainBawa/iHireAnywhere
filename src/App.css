@@ -140,3 +140,38 @@ nav ul {
 .search input {
   outline: none;
 }
+
+@media only screen and (min-width: 768px) {
+
+  .desk-screen {
+    height: 65vh;
+  }
+
+  .desk-screen img {
+    width: 30%;
+  }
+
+  .desk-screen h2 {
+    font-size: 5.5em;
+  }
+
+  .search {
+    padding-left: 7%;
+  }
+
+  .search input {
+    width: 50%;
+  }
+
+  .jobs-container {
+    justify-content: center;
+  }
+
+  .jobs-container li {
+    width: 20%;
+    height: auto;
+    margin: 1%;
+  }
+
+
+}
