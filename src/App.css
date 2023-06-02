@@ -70,6 +70,8 @@ nav ul {
   display: flex;
   background-color: #fd5294;
   padding: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
 }
 
 .screen img {
@@ -87,6 +89,8 @@ nav ul {
 .jobs-container li {
   width: 50%;
   height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .jobs-container button {
@@ -96,11 +100,13 @@ nav ul {
   align-items: center;
   padding: 1%;
   gap: 5%;
-  width: 100%;
+  width: 90%;
   height: 35vh;
   background-color: #de4682;
   border: 1px solid #fd5294;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
 }
 
 .jobs-container button img {
@@ -144,8 +150,6 @@ nav ul {
 @media only screen and (min-width: 768px) {
   .desk-screen {
     height: 65vh;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .desk-screen img {
@@ -172,10 +176,6 @@ nav ul {
     width: 15%;
     height: auto;
     margin: 1%;
-  }
-
-  .jobs-container button {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .settings, .back {
