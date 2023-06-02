@@ -144,6 +144,8 @@ nav ul {
 @media only screen and (min-width: 768px) {
   .desk-screen {
     height: 65vh;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .desk-screen img {
@@ -174,5 +176,13 @@ nav ul {
 
   .jobs-container button {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .settings, .back {
+    justify-content: center;
+  }
+
+  .settings {
+    gap: 10%;
   }
 }
