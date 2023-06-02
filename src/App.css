@@ -21,6 +21,7 @@ body {
 
 li {
   list-style: none;
+  margin: 4% 0;
 }
 
 nav {
@@ -137,11 +138,6 @@ nav ul {
   font-size: 1.3em;
 }
 
-#details-title {
-  height: 5vh;
-  margin: 5% 0;
-}
-
 .search,
 .search input {
   padding: 2%;
@@ -184,11 +180,34 @@ nav ul {
     margin: 1%;
   }
 
-  .settings, .back {
+  .settings,
+  .back {
     justify-content: center;
   }
 
   .settings {
     gap: 10%;
+  }
+
+  .screen h2 {
+    width: 40%;
+  }
+
+  .screen-details img {
+    width: 10%;
+  }
+
+  .screen-details h2 {
+    width: 30%;
+    font-size: 2em;
+  }
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .details-container h2 {
+    width: 50%;
   }
 }

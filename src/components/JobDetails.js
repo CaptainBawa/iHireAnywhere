@@ -15,15 +15,19 @@ const JobDetails = () => {
       <ul>
         {jobDetails.map((details) => (
           <>
-            <div className="screen">
+            <div className="screen screen-details">
               <img src={details.company_logo} alt={details.company_name} />
               <h2>
                 Company Name:
                 {details.company_name}
               </h2>
             </div>
-            <h2 id="details-title">{details.title}</h2>
             <li key={details.id}>
+              <h2>
+                <span>Job Title: </span>
+                <span>{details.title}</span>
+                <span><ArrowCircleRightIcon /></span>
+              </h2>
               <h2>
                 <span>Job Type: </span>
                 <span>{details.job_type}</span>
