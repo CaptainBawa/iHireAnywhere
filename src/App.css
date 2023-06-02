@@ -75,7 +75,7 @@ nav ul {
 }
 
 .screen img {
-  width: 40%;
+  width: 30%;
   height: auto;
 }
 
@@ -124,10 +124,13 @@ nav ul {
   border: 1px solid #fd5294;
   font-size: 1.2em;
   padding: 0 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
 }
 
 .screen h2 {
   background-color: #fd5294;
+  width: 60%;
 }
 
 .jobs-container button h2 {
@@ -136,6 +139,7 @@ nav ul {
 
 #details-title {
   height: 5vh;
+  margin: 5% 0;
 }
 
 .search,
@@ -145,6 +149,8 @@ nav ul {
 
 .search input {
   outline: none;
+  border: none;
+  border-radius: 10px;
 }
 
 @media only screen and (min-width: 768px) {
