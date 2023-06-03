@@ -129,6 +129,10 @@ nav ul {
   border-radius: 30px;
 }
 
+.screen-details h2 {
+  margin-left: 3%;
+}
+
 .screen p {
   width: 60%;
   font-size: 0.8em;
