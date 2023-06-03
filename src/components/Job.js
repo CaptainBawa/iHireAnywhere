@@ -45,7 +45,13 @@ const Jobs = () => {
       <Navigation year="2023" text="All Remote Jobs" />
       <div className="screen desk-screen">
         <img src={support} alt="man" />
-        <h2>Remote Jobs</h2>
+        <p>
+          One interesting aspect of remote software development is the flexibility it offers.
+          Developers can choose to work from the comfort of their homes, coffee shops,
+          or co-working spaces, eliminating the need for a traditional office environment.
+          This flexibility allows them to tailor their work environment to their preferences,
+          which can enhance productivity and work-life balance.
+        </p>
       </div>
       <div className="search">
         <input

@@ -129,9 +129,11 @@ nav ul {
   border-radius: 30px;
 }
 
-.screen h2 {
-  background-color: #fd5294;
+.screen p {
   width: 60%;
+  font-size: 0.8em;
+  font-weight: 900;
+  line-height: 120%;
 }
 
 .jobs-container button h2 {
@@ -159,7 +161,8 @@ nav ul {
   }
 
   .desk-screen h2 {
-    font-size: 5.5em;
+    font-size: 1.7em;
+    line-height: 130%;
   }
 
   .search {
@@ -172,6 +175,11 @@ nav ul {
 
   .jobs-container {
     justify-content: center;
+  }
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .jobs-container li {
@@ -189,8 +197,8 @@ nav ul {
     gap: 10%;
   }
 
-  .screen h2 {
-    width: 40%;
+  .screen p {
+    font-size: 1.9em;
   }
 
   .screen-details img {
@@ -200,11 +208,6 @@ nav ul {
   .screen-details h2 {
     width: 30%;
     font-size: 2em;
-  }
-
-  li {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .details-container h2 {
