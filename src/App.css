@@ -218,4 +218,16 @@ nav ul {
   .details-container h2 {
     width: 50%;
   }
+
+  .jobs-container button {
+    transition: width 2s, height 2s, transform 2s;
+  }
+
+  .jobs-container button:hover {
+    width: 400px;
+    height: 350px;
+    transform: rotate(20deg);
+    border-top-color: #0eb7da;
+    border-right-color: #0eb7da;
+  }
 }
