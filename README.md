@@ -118,7 +118,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  Live server
+  npm start
 ```
 
 ### Run tests
