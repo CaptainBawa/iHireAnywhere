@@ -72,7 +72,7 @@
 
 ## 🔭 Code Documentation For Non-technical People <a name="Documentation"></a>
 
-This describes the code to non-technical people [DOC](https://github.com/CaptainBawa/iHireAnywhere/blob/readme/Documentaion.md)
+Feel free to read the [documentation](https://github.com/CaptainBawa/iHireAnywhere/blob/development/Documentaion.md) if you really want to understand the code
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://ihireanywhere.onrender.com)
