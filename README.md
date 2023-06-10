@@ -31,7 +31,7 @@
 - [📝 License](#license)
 
 
-# 📖 iHireAnywhere <a name="about-project"></a>
+# 📖 iHireAnywhere<a name="about-project"></a>
 
 **iHireAnywhere** is a web application that allows users to browse and apply for remote jobs from various companies. It uses React for the front-end, Redux for the state management, and Axios for fetching data from an external API. The application consists of three main components: Jobs, JobDetails, and Navigation. Jobs displays a list of available remote jobs with their titles and logos. JobDetails shows more information about a selected job, such as the company name, description, salary, and location. Navigation provides a header with the current year and the text of the current page. Users can navigate between the pages using buttons with arrow icons.
 
@@ -76,6 +76,7 @@ Feel free to read the [documentation](https://github.com/CaptainBawa/iHireAnywhe
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://ihireanywhere.onrender.com)
+
 - [Presentation Video Link](https://www.loom.com/share/d3e1b1a02d2f4bff92994807bd661c3b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
